@@ -23,3 +23,12 @@ function generatePassword() {
     alert("Please Chose a number between 8 and 128 characters");
     return
   }
+  var LowerCase = confirm("Would you like lowercase?");
+  var UpperCase = confirm("Would you like uppercase?");
+  var Symbols = confirm("Would you like symbols?");
+  var Numbers = confirm("Would you like numbers?");
+
+  if (LowerCase === false && UpperCase === false && Symbols === false && Numbers === false) {
+    alert("Please select one of the character functions");
+    return
+  }
