@@ -50,3 +50,13 @@ function generatePassword() {
     UserChoices = UserChoices.concat(NumbersChar);
     console.log(UserChoices);
   }
+  var TrueUserChoices = []
+
+  for(var i= 0; i < passwordLength; i++) {
+    var item = UserChoices[Math.floor(Math.random() * UserChoices.length)];
+    TrueUserChoices.push(item);
+  }
+  return TrueUserChoices.join("");
+
+  
+}
