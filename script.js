@@ -32,3 +32,21 @@ function generatePassword() {
     alert("Please select one of the character functions");
     return
   }
+  var UserChoices = []
+
+  if (LowerCase === true) {
+    UserChoices = UserChoices.concat(LowerCaseChar);
+    console.log(UserChoices);
+  }
+  if (UpperCase === true) {
+    UserChoices = UserChoices.concat(UpperCaseChar);
+    console.log(UserChoices);
+  }
+  if (Symbols === true) {
+    UserChoices = UserChoices.concat(SymbolsChar);
+    console.log(UserChoices);
+  }
+  if (Numbers === true) {
+    UserChoices = UserChoices.concat(NumbersChar);
+    console.log(UserChoices);
+  }
